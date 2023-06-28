@@ -1,9 +1,9 @@
 # OpenACC_DDT
-1. Compile pi_openacc.f90 like:
-    module load PrgEnv-cray
-    module load rocm
-    module load craype-accel-amd-gfx90a
-    ftn -hacc -g -O0 -o pi_openacc pi_openacc.f90
+1. Compile pi_openacc.f90 like: <br>
+    module load PrgEnv-cray<br>
+    module load rocm<br>
+    module load craype-accel-amd-gfx90a<br>
+    ftn -hacc -g -O0 -o pi_openacc pi_openacc.f90<br>
 2. Change the account (and other settings) setting in the batch script and run it: sbatch pi_acc.slurm
 
 3. Add a breakpoint in the code by selecting at Control -> Add Breakpoint and then write in the function line your break function. Or just by clicking left of the code line numbers.
