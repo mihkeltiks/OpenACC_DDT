@@ -2,6 +2,8 @@
 1. Install Linaro Forge 23.0 with EasyBuild<br>
     module load LUMI/22.12<br>
     module load EasyBuild-user<br>
+    eb LinaroForge-23.0.eb -r<br>
+
 
 3. Install new Linaro version locally and under Remote Launch -> Configure -> Edit set the remote installation directory to /users/<username>/EasyBuild/SW/LUMI-22.12/G/Linaro_Forge/23.0
 ![image](https://github.com/mihkeltiks/OpenACC_DDT/assets/138012113/34f60194-fc32-4ef9-b018-7fa59506cd01)
