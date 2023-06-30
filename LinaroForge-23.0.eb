@@ -1,0 +1,58 @@
+easyblock = 'EB_Allinea'
+
+name =    'Linaro_Forge'
+version = '23.0'
+
+homepage = 'https://www.linaroforge.com/'
+
+whatis = [
+    'Description: Linaro Forge debugging and profiling tools'
+]
+
+description = """
+Arm Forge is the leading server and HPC development tool
+suite in research, industry, and academia for C, C++,
+Fortran, and Python high performance code on Linux.
+
+Arm Forge is the leading server and HPC development tool suite in research,
+industry, and academia for C, C++, Fortran, and Python high performance
+code on Linux.
+
+Arm Forge includes Arm DDT, the best debugger for time-saving high
+performance application debugging, Arm MAP, the trusted performance profiler
+for invaluable optimization advice, and Arm Performance Reports to help you
+analyze your HPC application runs.
+"""
+
+usage = """
+Arm Forge can be used in two different modes on LUMI:
+
+-   It is possible to run the GUI on LUMI but then you'll have to use the VNC
+    server provided by the lumi-vnc module.
+-   It is also possible to install a remote client on your personal machine and
+    let LUMI connect to it through proper ssh tunneling.
+    The remote clients can be downloaded fro Windows, macOS and Linux from
+    https://developer.arm.com/downloads/-/arm-forge. The package for Linux
+    contains everything, but only the remote client will work on your machine
+    (unless you would happen to have a personal license for Arm Forge).
+
+For more information, try also "ddt -h", "map -h" or "perf-report -h".
+"""
+
+docurls = [
+    'Links to PDF versions of the manuals on https://developer.arm.com/Tools%20and%20Software/Arm%20Forge',
+    'Copy of the PDF user guide in $EBROOTARMFORGE/doc/userguide.pdf (after loading the module)',
+]
+
+toolchain = SYSTEM
+
+source_urls = ['https://downloads.linaroforge.com/']
+sources =     ['%(version)s/linaro-forge-%(version)s-linux-x86_64.tar']
+checksums =   ['8d60d9f16d0e6c11c951bf079c03af75']
+
+#start_dir = '%(builddir)s/linaro-forge-%(version)s-linux-x86_64/'
+#install_cmd = "./textinstall.sh --accept-licence %(installdir)s"
+
+license_file = '/appl/lumi/licenses/Arm-Forge/Licence'
+
+moduleclass = 'tools'
