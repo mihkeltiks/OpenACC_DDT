@@ -10,7 +10,7 @@
     ftn -hacc -g -O0 -o pi_openacc pi_openacc.f90<br>
 4. Change the account (and other settings) setting in the batch script and run it: sbatch pi_acc.slurm
 
-5. Select ROCm whn starting script
+5. Select ROCm when starting script
 
 6. Add a breakpoint in the code by selecting at Control -> Add Breakpoint and then write in the function line your break function. Or just by clicking left of the code line numbers.
 ![image](https://github.com/mihkeltiks/OpenACC_DDT/assets/138012113/b2eca4c1-3420-4cea-a533-d5538646cef6)
