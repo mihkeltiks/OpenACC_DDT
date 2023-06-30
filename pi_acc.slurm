@@ -10,9 +10,9 @@
 
 export ALLINEA_STOP_AT_MAIN=1
 
-module load LUMI/22.08
+module load LUMI/22.12
 module load partition/G
-module load ARMForge/22.0.1
+module load Linaro_Forge/23.0
 module load PrgEnv-cray
 module load craype-accel-amd-gfx90a
 module load rocm
