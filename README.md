@@ -8,6 +8,7 @@
 ![image](https://github.com/mihkeltiks/OpenACC_DDT/assets/138012113/34f60194-fc32-4ef9-b018-7fa59506cd01)
 
 4. Compile pi_openacc.f90 like: <br>
+    module load cce/15.0
     module load PrgEnv-cray<br>
     module load rocm<br>
     module load craype-accel-amd-gfx90a<br>
