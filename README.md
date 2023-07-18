@@ -1,5 +1,6 @@
 # OpenACC_DDT
 1. Install Linaro Forge 23.0 with EasyBuild<br>
+    module load cce/15.0<br>
     module load LUMI/22.12<br>
     module load EasyBuild-user<br>
     eb LinaroForge-23.0.eb -r<br>
